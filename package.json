@@ -16,6 +16,8 @@
     "cowsay": "^1.5.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "firebase": "^9.6.11",
+    "firebase-admin": "^10.1.0",
     "mongodb": "^4.4.1",
     "mongoose": "^6.2.8",
     "multer": "^1.4.4",
