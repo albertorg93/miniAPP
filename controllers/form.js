@@ -12,23 +12,7 @@ const getForm = (req, res) => {
 
 
 const createDoc = async (req, res) => {
-//     fs.renameSync(req.file.path, req.file.path + '.' + req.file.mimetype.split('/')[1]);
-//     req.body.image = req.file.originalname
-//     const newProduct = new creaDoc(req.body); // {} nuevo producto a guardar   
 
-//     try{
-        
-
-//         const response = await newProduct.save();
-//          res.json({message:`Producto ${response.name} guardada en el sistema con ID: ${response.id}`})
-//         } catch(err){
-//             res.status(400).json({message:err});
-//         }
-
-
-// const name = req.body.name;
-// const price = req.body.price;
-// const description = req.body.description;
 let img;
 const file = req.file;
 const fileName= file.originalname;
@@ -48,10 +32,6 @@ try {
 } catch (error) {
     console.log(error);    
 }
-
-
-
-
 
 
  }
