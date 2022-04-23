@@ -33,11 +33,16 @@ try {
     console.log(error);    
 }
 
-
  }
+
+ const getProducts = (req, res) => {
+    console.log("hola desde get products")
+}
+
 
 const formulario = {
     getForm,
-    createDoc
+    createDoc,
+    getProducts
   }
    module.exports = formulario;

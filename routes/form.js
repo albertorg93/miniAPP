@@ -10,6 +10,6 @@ routes.get('/', formulario.getForm);
 
 routes.post('/upload', upload ,formulario.createDoc);
 
-//routes.get('/products', formulario.getProducts);
+routes.get('/products', formulario.getProducts);
 
 module.exports = routes;
