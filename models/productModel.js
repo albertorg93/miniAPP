@@ -1,27 +1,29 @@
-// const data = require("./dataproduct");
+const data = require("./dataproduct");
 
-// const getAllProducts = async () => {
-//     try {
-//         const getAllProducts = await data.find({});
-//         return getAllProducts;        
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
 
-// const createProduct = async (product) => {
-//     try {
-//         console.log(product);
-//         const newProduct = new data(product);
-//         const create = await data.create(newProduct)
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
+const createProduct = async (item) => {
+    try {
+        const newProduct = new data(item);
+        const create = await newProduct.save()
+        return create;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
-// const productsModel = {
-//     createProduct,
-//     getAllProducts
-// }
+const getProducts = async () => {
+    try {
+        const getAllProducts = await data.find({});
+        return getAllProducts;        
+    } catch (error) {
+        console.log(error);
+    }
+}
 
-// module.exports = productsModel;
+
+const productsModel = {
+    createProduct,
+    getProducts
+}
+
+module.exports = productsModel;
