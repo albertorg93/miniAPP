@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/styles.css")
+        title Document
+    body#productsbody
+        h1 Welcome to the products list
+        div#result
+            each product, index in products
+                div(class="resultados")
+                    p.item Id:
+                    p.data=`${product.id}`
+                    p.item Title:
+                    p.data=`${product.name}`
+                    p.item Price:
+                    p.data=`${product.price}`
+                    p.item Description:
+                    p.data=`${product.description}`
+                    img#productimg(src=`${product.image}`, alt="product.img")
+        a(href="/") Back to menu
