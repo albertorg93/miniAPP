@@ -6,7 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./css/styles.css")
         title Document
-    body
+    body#productsbody
         h1 Welcome to the products list
         div#result
             each product, index in products
@@ -20,3 +20,4 @@ html(lang="en")
                     p.item Description:
                     p.data=`${product.description}`
                     img#productimg(src=`${product.image}`, alt="product.img")
+        a(href="/") Back to menu
